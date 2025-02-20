@@ -5,7 +5,7 @@ import hotel from "../assets/hotel2.jpg";
 import food from "../assets/food2.jpg";
 import activity from "../assets/activity2.jpg";
 
-const MidPart = () => {
+const midPart = () => {
   return (
     <section className="container mx-auto px-20 py-16 mt-10 mb-20">
       <div className="grid lg:grid-cols-2 gap-18 items-center">
@@ -62,4 +62,4 @@ const MidPart = () => {
   );
 };
 
-export default MidPart;
+export default midPart;
