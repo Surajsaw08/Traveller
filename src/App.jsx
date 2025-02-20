@@ -2,11 +2,10 @@ import React from "react";
 import Navbar from "./components/navbar";
 import Hero from "./components/Hero";
 import Features from "./components/Features";
-import Midpart from "./components/midpart";
-
 import Footer from "./components/Footer";
 import Testimonial from "./components/Testimonial";
 import Contact from "./components/Contact";
+import Midportion from "./components/Midportion";
 
 const App = () => {
   return (
@@ -19,7 +18,7 @@ const App = () => {
 
       <div className="px-20">
         <Features />
-        <Midpart />
+        <Midportion />
         <Testimonial />
         <Contact />
       </div>
