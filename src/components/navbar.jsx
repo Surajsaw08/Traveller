@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom"; // If using React Router
-import Button from "@/components/ui/Button"; // Import your custom Button component
+import Button from "./ui/Button";
+// import Button from "@/components/ui/Button"; // Import your custom Button component
 
 const Navbar = () => {
   return (
