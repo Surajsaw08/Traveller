@@ -42,7 +42,7 @@ export default function BookingPage() {
   const CurrentStepComponent = steps[step - 1].component;
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#E2E5C8] to-white py-12">
+    <div className="">
       <div className="container mx-auto max-w-4xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

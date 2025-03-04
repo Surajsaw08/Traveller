@@ -7,25 +7,25 @@ const app = express();
 dotenv.config();
 const port = 4000;
 
-// Enable CORS for the frontend at localhost:5173
+
 const corsOptions = {
-  origin: "http://localhost:5173", // Allow only frontend on localhost:5173
+  origin: "http://localhost:5173",
   methods: ["GET", "POST"],
   allowedHeaders: ["Content-Type"],
 };
 
-app.use(cors(corsOptions));  // Apply the CORS options
+app.use(cors(corsOptions));  
 app.use(express.json());
 
 // Create a Nodemailer transporter using Gmail
 const transporter = nodemailer.createTransport({
   service: "gmail",
-  host: "smtp.gmail.com",  // Correct SMTP host for Gmail
-  port: 587,  // Use 465 if SSL is preferred
-  secure: false,  // Set to true if using port 465
+  host: "smtp.gmail.com", 
+  port: 587, 
+  secure: false,  
   auth: {
     user: process.env.EMAIL_USER, 
-    pass: process.env.EMAIL_PASS,  // Use the generated app password if using 2FA
+    pass: process.env.EMAIL_PASS,  
   },
 });
 
